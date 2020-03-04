@@ -1,0 +1,105 @@
+    @import url('https://fonts.googleapis.com/css?family=Spartan:700&display=swap');
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-family: 'Spartan', sans-serif;
+    }
+    
+    header>h1 {
+        background-color: white;
+        color: #002C62;
+        padding: 20px;
+        margin: 0 auto;
+        text-align: center;
+        width: 600px;
+        border-radius: 50px;
+    }
+    
+    body {
+        background-color: #002C62;
+        color: white;
+    }
+    
+    .board {
+        width: 400px;
+        height: 150px;
+        margin: 30px auto 0px;
+        background-color: rgb(0, 64, 143);
+        border-color: white;
+        border-style: solid;
+        border-radius: 15px;
+        position: relative;
+        text-align: center;
+        padding: 40px;
+        font-size: 75px;
+    }
+    
+    .board>.badge {
+        width: 100px;
+        font-size: 20px;
+        margin: 0 auto;
+        padding: 5px;
+        text-align: center;
+        background-color: #002C62;
+        border-color: white;
+        border-style: solid;
+        border-radius: 10px;
+    }
+    
+    #player {
+        position: absolute;
+        left: -50px;
+        top: 50px;
+    }
+    
+    #computer {
+        position: absolute;
+        right: -50px;
+        top: 50px;
+    }
+    
+    p {
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    #result {
+        padding-top: 40px;
+    }
+    
+    .choices {
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .choice {
+        margin: 20px;
+        border-radius: 50%;
+        display: inline-block;
+        border-style: solid;
+    }
+    
+    #r:hover {
+        background-color: #08AFE6;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 50%;
+    }
+    
+    #p:hover {
+        background-color: #C9DB2F;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 50%;
+    }
+    
+    #s:hover {
+        background-color: #E73F98;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 50%;
+    }
