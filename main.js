@@ -47,19 +47,26 @@ function lose(_user, _comp) {
 function game(user_choice) {
     const comp_choice = random_choice()
     const situation = user_choice + comp_choice
+    const button = document.getElementById(user_choice)
     switch (situation) {
         case 'rs':
         case 'sp':
         case 'pr':
             win(user_choice, comp_choice);
+            button.classList.add("green")
+            setTimeout(() => button.classList.remove('green'), 1000)
             break;
         case 'sr':
         case 'ps':
         case 'rp':
             lose(user_choice, comp_choice);
+            button.classList.add("red")
+            setTimeout(() => button.classList.remove('red'), 1000)
             break;
         default:
             draw(user_choice);
+            button.classList.add("grey")
+            setTimeout(() => button.classList.remove('grey'), 1000)
     }
     comp_score_span.innerHTML = comp_score
     user_score_span.innerHTML = user_score

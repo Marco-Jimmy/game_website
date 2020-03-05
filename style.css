@@ -56,6 +56,19 @@
         top: 50px;
     }
     
+    .green {
+        background-color: greenyellow;
+    }
+
+    .red {
+        background-color: red
+        ;
+    }
+
+    .grey {
+        background-color: grey;
+    }
+    
     #computer {
         position: absolute;
         right: -50px;
@@ -91,14 +104,14 @@
     }
     
     #p:hover {
-        background-color: #C9DB2F;
+        background-color: #08AFE6;
         cursor: pointer;
         transition: all 0.3s ease;
         border-radius: 50%;
     }
     
     #s:hover {
-        background-color: #E73F98;
+        background-color: #08AFE6;
         cursor: pointer;
         transition: all 0.3s ease;
         border-radius: 50%;
