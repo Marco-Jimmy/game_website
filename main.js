@@ -54,19 +54,19 @@ function game(user_choice) {
         case 'pr':
             win(user_choice, comp_choice);
             button.classList.add("green")
-            setTimeout(() => button.classList.remove('green'), 1000)
+            setTimeout(() => button.classList.remove('green'), 500)
             break;
         case 'sr':
         case 'ps':
         case 'rp':
             lose(user_choice, comp_choice);
             button.classList.add("red")
-            setTimeout(() => button.classList.remove('red'), 1000)
+            setTimeout(() => button.classList.remove('red'), 500)
             break;
         default:
             draw(user_choice);
             button.classList.add("grey")
-            setTimeout(() => button.classList.remove('grey'), 1000)
+            setTimeout(() => button.classList.remove('grey'), 500)
     }
     comp_score_span.innerHTML = comp_score
     user_score_span.innerHTML = user_score
